@@ -1,0 +1,178 @@
+.amazonmenu ul{
+	font: normal 13px Helvetica, Verdana, sans-serif;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	line-height:25px;
+
+}
+
+.amazonmenu ul li{
+	position: static; /* menu li items should have position set to static */
+    /*border-bottom:1px solid;*/
+}
+
+.amazonmenu > ul{
+	background: white;
+	/*border: 1px solid gray;
+	border-radius: 5px;*/
+	 /*height of main menu */
+   /* width: 250px;  width of main menu */
+	position: relative;
+}
+
+.amazonmenu > ul li a{
+	color:black;
+	display: block;
+	overflow: auto;
+	padding: 6px 0;
+	position: relative;
+	text-decoration: none;
+	text-indent: 6px;
+    font-variant:normal;
+  
+    /*letter-spacing:1px;*/
+}
+.amazonmenu>ul li a::first-letter
+{
+     font-size:larger;
+     color:#FF4DFF;
+    }
+    /*.amazonmenu > ul li.hassub.selected > a::after{
+	    background-color:#e9feec;
+        border-left-color:  #2dc683;
+        font-size:1.125em;
+        font-weight:bold;
+}*/
+
+
+    .amazonmenu > ul li.hassub > a::after { /* Arrow to indicate this item has sub menu (LI elements with sub menus have a ".hassub" class). */
+        border: 5px solid transparent;
+        border-left-color: gray; /* Default color of arrow */
+        content: '';
+        height: 0;
+        position: absolute;
+        right: 5px;
+        top: 35%;
+        width: 0;
+    }
+
+/*****************level 1******************/
+     /**********selected*************/
+    .amazonmenu > ul > li.hassub:hover > a::after{
+        background-color:rgba(246, 200, 200, 0.23);
+        border-left-color:#faa8a8;
+        font-size: 1.125em;
+        font-weight: bold;
+    }
+
+    .amazonmenu > ul > li.hassub:hover > a {
+        background-color:rgba(246, 200, 200, 0.23); 
+        color: #faa8a8;
+        /*color:rgba(250, 168, 168, 0.23);*/
+        font-size: 1.125em;
+        font-weight: bold;
+    }
+    /*****initial*********/ 
+.amazonmenu > ul > li.hassub > a:hover::after {
+    background-color: #e9feec;
+    border-left-color: #2dc683;
+    font-size: 1.125em;
+    font-weight: bold;
+}
+
+.amazonmenu > ul > li.hassub > a:hover{ 
+    background-color:#e9feec;	
+    color: #2dc683;             
+    font-size:1.125em;
+    font-weight:bold;
+}
+    
+
+/****************level2********************/
+
+.amazonmenu >ul>li > ul > li.hassub:hover > a::after {
+        background-color: #e9feec;
+        border-left-color: #2dc683;
+        font-size: 1.125em;
+        font-weight: bold;
+    }
+
+.amazonmenu>ul>li > ul > li:hover > a/*, .amazonmenu ul li.hassub.selected > a*/{ 
+	color: #2dc683;
+    font-size:1.125em;
+    font-weight:bold;
+    background-color:#e9feec;
+}
+/****************level3********************/
+.amazonmenu > ul>li >ul>li >ul > li.hassub:hover > a::after {
+        background-color: #e9feec;
+        border-left-color: #2dc683;
+        font-size: 1.125em;
+        font-weight: bold;
+    }
+
+.amazonmenu >ul>li >ul>li > ul > li:hover > a/*, .amazonmenu ul li.hassub.selected > a*/{ 
+	color: #2dc683;
+    font-size:1.125em;
+    font-weight:bold;
+    background-color:#e9feec;
+}
+
+/************level 3 ends********************/
+
+.amazonmenu ul li > div, .amazonmenu ul li > ul{ /* Sub menus (Could be a DIV or UL wrapper) style */
+	border-radius: 0 8px 8px 0;
+	display: none;
+	/*font-weight: normal;*/
+	width: 200px;
+	min-height:100%; /*height of sub menu*/
+	left: 100%;
+	position: absolute;
+	top: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	/*z-index: 0 ! important;*/
+    padding: 5px 0;
+    margin: 2px 0 0;
+    /*font-size: 14px;*/
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    /*border: 1px solid #ccc;*/
+    border: 1px solid rgba(0,0,0,.175);
+    /*border-radius: 4px;*/
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+}
+
+
+/* ###### CSS Media queries ###### */
+
+@media screen and (max-width: 480px)
+{ /* When screen size is 480px */
+	.amazonmenu ul li > div, .amazonmenu ul li > ul
+	{
+		left: 50px;
+		/* Stack the sub menus so they take up less space */
+	}
+/*.amazonmenu > ul li.hassub::after
+{ 
+		background:white;
+        color:black;
+		content: '';
+		height: 100%;
+		left: 0;
+		pointer-events: none;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		z-index: 100;
+	}*/
+}

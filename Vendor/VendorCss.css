@@ -1,0 +1,226 @@
+﻿
+body 
+{
+     background-color: #fff;
+}
+@media(max-width:768px) {
+    body {
+       margin-top: 0px;
+       padding-left:0%;
+       padding-right:0%;
+       /*background-color:Grey;*/
+    }
+}
+@media(min-width:769px) and (max-width:1200px) {
+    body {
+       margin-top: 0px;
+       padding-left:6%;
+       padding-right:6%;
+      /* background-color:Grey;*/
+    }
+}
+@media(min-width:1200px) {
+    body {
+       margin-top: 0px;
+       padding-left:7%;
+       padding-right:7%;
+       /*background-color:Grey;*/
+    }
+}
+#Vwrapper
+{
+    width:100%;
+    height:100%;   
+}
+
+#Vendor-Wrapper
+{
+    
+}
+
+#Vendor-PageWrapper
+{
+    
+}
+
+#Plan-Wrapper
+{
+   /*width:95%;*/
+   height:500px; 
+   /*border:1px solid green;*/
+   margin-top:1px;
+}
+
+#Plan-PageWrapper
+{
+    margin-top:45px; 
+    padding: 0;
+    background-color: white;
+    width:100%;
+    /*border:1px solid red; */
+}
+
+#VpageWrapper
+{
+    margin-top:75px; 
+    padding: 0;
+    background-color: white;
+    width:100%;
+    height:500px;
+}
+
+#VLwrapper 
+{     
+    /*width:100%;
+    height:600px;
+    /*padding-left: 84px;
+    padding-right: 84px;*/
+    /*margin-left: 84px;
+    margin-right: 84px;*/
+}
+
+#vlPagewrapper
+{
+    margin-top:2%;
+    background-color: white;
+    width:100%;
+    height:500px;
+    /*border:1px solid blue; margin-right: 100px;*/
+}
+#CFooter
+{
+   padding-top:30px;
+   padding-bottom:50px; 
+}
+
+#VAddProWrapper
+{
+    margin-left: 84px;
+    margin-right: 84px;
+   
+}
+#VAddpageWrapper
+{
+    margin-top:90px; 
+    padding: 0;
+    background-color: white;
+    width:100%;
+    height:600px;
+}
+#editor {overflow:scroll; max-height:500px}
+#VproWrapper
+{
+  width:100%;
+  height:100%;
+}
+#vProPagewrap
+{
+    /*margin-top:1%; */
+    background-color: white;
+    width:100%;
+    height:600px;
+}
+
+#footer
+       {
+            padding-top: 30px;
+            padding-bottom: 30px;
+            /*background-color: #21272d;*/
+            background-image:url(../img/loweraboutus.png);
+            background-repeat:no-repeat;
+            margin-top: 50px;
+            color: #efefef;
+            min-height: 200px;
+       }
+.footer {
+            /*border-top: 1px solid #d8d8d8;*/
+            max-width: 100%;
+            margin: 0% auto;
+            padding: 0 0;
+            padding-top: 1em;
+            background-image:url(~/img/loweraboutus.png);
+            margin-left:9%;
+           /* margin-right:9%;*/
+        }
+        .footh4 {
+            color:Blacl;
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+            font-weight:bolder;
+        }
+        .footul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font: inherit;
+            font-size: 100%;
+            vertical-align: baseline;
+        }
+        .footli {
+            line-height:1.6;
+        }
+        .foota {
+            color: #464E54;
+            text-decoration: none;
+            line-height: inherit;
+        }
+        .foota:hover {
+            color:darkgrey;
+            text-decoration:none;
+        }
+        .copywrite{
+            margin:auto;
+            padding:1%;
+            text-align:center;
+        }
+                
+        .modaladdBackground
+        {
+            background-color: Black;
+            filter: alpha(opacity=40);
+            opacity: 0.4;
+        }
+        .modalPopup
+        {
+            background-color: #FFFFFF;
+            width: 300px;
+            border: 3px solid #0DA9D0;
+        }
+        .modalPopup .header
+        {
+            background-color: #2FBDF1;
+            height: 30px;
+            color: White;
+            line-height: 30px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .modalPopup .body
+        {
+            min-height: 50px;
+            line-height: 30px;
+            text-align: center;
+            padding: 5px;
+        }
+        .modalPopup .footer
+        {
+            padding: 3px;
+        }
+        .modalPopup .button
+        {
+            height: 23px;
+            color: White;
+            line-height: 18px;
+            text-align: center;
+            font-weight: bold;
+            cursor: pointer;
+            background-color: red;
+            border: 1px solid #5C5C5C;
+        }
+        .modalPopup td
+        {
+            text-align: left;
+        }

@@ -1,0 +1,267 @@
+﻿body {
+    
+   /* background-color: white;*/
+    background-color: white;
+    width:100%;
+    height:100%;
+}
+
+@media(min-width:1200px) {
+    body {
+       margin-top: 0px;
+       padding-left:7%;
+       padding-right:7%;
+       
+    }
+
+}
+@media(min-width:769px) and (max-width:1200px) {
+    body {
+       margin-top: 0px;
+       padding-left:6%;
+       padding-right:6%;
+    }
+}
+@media(min-width:400px) and (max-width:768px) {
+    body {
+       margin-top: 0px;
+       padding-left:0%;
+       padding-right:0%;
+    }
+
+}
+@media (max-width:400px) {
+    body {
+       margin-top: 0px;
+       padding-left:0%;
+       padding-right:0%;
+    }
+ 
+}
+
+#ConfirmOrder-wrapper
+{
+    /*margin-top:4%; */
+}
+
+/*Site.Master Page Style  */
+
+/* css for iPhone Start*/
+
+@media (device-height: 568px) and (height: 529px),
+(device-height: 480px) and (height: 441px) {
+/* minimal-ui is active */
+}
+
+#checkoutWrapper
+{
+  /* padding-left: ;
+  padding-right: ;*/
+    width:100%;
+    height:100%; 
+    /*margin-top:1%; */
+}
+#firstdiv
+{
+   margin-top:10px;
+}
+
+#TopHeaderDiv
+{
+  /* padding-left:0%;
+       padding-right:0%; */
+       margin-top:-1%;
+}
+#CheckoutPageWrapper
+{
+    /*margin-top: 80px;   
+    padding-left:1%;
+       padding-right:1%; */
+    background-color: white;
+    width:100%;
+    height:100%;
+}
+#Order-Wrapper
+{
+    margin-top:1%;
+}
+#Order-PageWrapper
+{
+    margin-top:1%;
+    width:100%;
+    height:100%;
+}
+        .pnlCSS
+        {
+            font-weight: bold;
+            cursor: pointer;
+            border: solid 1px #6DC2FF;
+            width: 36%;
+        }
+        
+        .modalBackground
+        {
+          background-color:black;
+          filter: alpha(opacity=60);
+          opacity: 0.6;
+        }
+        .modalPopup1 
+        {
+	        background-color:#6DC2FF;
+	        border-width:3px;
+	        border-style:solid;
+	        border-color:black;
+	        padding-top:22px;
+	        padding-left:10px;
+	        width:300px;
+	        height:268px;
+	        margin-top:65px;
+        }
+        
+    /*Begin #1 : Listview Modelpopup EditAddress */
+    
+        .modaladdBackground
+        {
+            background-color: Black;
+            filter: alpha(opacity=40);
+            opacity: 0.4;
+        }
+        .modalPopupEditAddress
+        {
+            background-color: #FFFFFF;
+            width: 300px;
+            border: 3px solid #0DA9D0;
+        }
+        .modalPopupEditAddress .header
+        {
+            background-color: #2FBDF1;
+            height: 30px;
+            color: White;
+            line-height: 30px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .modalPopupEditAddress .body
+        {
+            min-height: 50px;
+            line-height: 30px;
+            text-align: center;
+            padding: 5px;
+        }
+        .modalPopupEditAddress .footer
+        {
+            padding: 3px;
+        }
+        .modalPopupEditAddress .button
+        {
+            height: 23px;
+            color: White;
+            line-height: 18px;
+            text-align: center;
+            font-weight: bold;
+            cursor: pointer;
+            background-color: red;
+            border: 1px solid #5C5C5C;
+        }
+        .modalPopupEditAddress td
+        {
+            text-align: left;
+        }
+        /*End #1 */ 
+        /* Start Listview Address */ 
+         .AddressItem
+        {
+           /* width: 235px;*/
+            float: left;
+             font-size: 13px;
+            font-weight:300;
+            /*padding: 2px;
+            margin: 2px;
+            text-align: center;
+            height:230px;*/
+        }
+        .groupSeparator
+        {
+            border-top: 1px dotted Gray;
+            height: 1px;
+            clear: both;
+        }
+        .itemSeparator
+        {
+            height: 400px;
+            width: 1px;
+            border-left: 1px solid Red;
+            margin-top: 3px;
+            margin-bottom: 2px;
+            float: left;
+           
+        }
+        
+        /* End Listview Address */ 
+         #footer
+       {
+            /*padding-top: 30px;
+            padding-bottom: 30px;
+            background-color: #21272d;
+            background-image:url(../img/loweraboutus.png);
+            background-repeat:no-repeat;
+            margin-top: 50px;
+            color: #efefef;
+            min-height: 200px;*/
+            
+            padding-top: 1%;
+            /*padding-bottom: 1%;*/
+            margin-bottom:-2px;
+            background-image:url(../img/loweraboutus.png);
+            background-repeat:no-repeat;
+            margin-top: 50px;
+            color: #efefef;
+            min-height: 200px;
+       }
+        .footer {
+           /* max-width: 100%;
+            margin: 0% auto;
+            padding: 0 0;
+            padding-top: 1em;
+            margin-left:9%;
+            margin-right:9%;*/
+            max-width: 100%;
+            margin: 0% auto;
+            padding: 0 0;
+            padding-top: 1em;
+            margin-left:5%;
+        }
+        .footh4 {
+            color:Blacl;
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+            font-weight:bolder;
+        }
+        .footul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font: inherit;
+            font-size: 100%;
+            vertical-align: baseline;
+        }
+        .footli {
+            line-height:1.6;
+        }
+        .foota {
+            color: #464E54;
+            text-decoration: none;
+            line-height: inherit;
+        }
+        .foota:hover {
+            color:darkgrey;
+            text-decoration:none;
+        }
+        .copywrite{
+            margin:auto;
+            padding:1%;
+            text-align:center;
+        }

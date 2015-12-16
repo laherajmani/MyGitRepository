@@ -1,0 +1,165 @@
+﻿body 
+{
+     background-color:white;
+}
+@media(min-width:1200px) {
+    body {
+       margin-top: 0px;
+       padding-left:7%;
+       padding-right:7%;
+       background-color:white;
+    }
+}
+@media(min-width:769px) and (max-width:1200px) {
+    body {
+       margin-top: 0px;
+       padding-left:6%;
+       padding-right:6%;
+      /* background-color:Grey;*/
+    }
+}
+@media(max-width:768px) {
+    body {
+       margin-top: 0px;
+       padding-left:0%;
+       padding-right:0%;
+       /*background-color:Grey;*/
+    }
+}
+#Sup-Wrapper
+{
+    /*margin-left: 84px;
+    margin-right: 84px;*/
+     width:100%;
+     height:100%;
+     /*background-color:LightGray;*/
+}
+
+#Sup-PageWrapper
+{
+    margin-top:3%;
+    width:100%;
+    height:780px;
+}
+/*Coupon */ 
+#admin-couponWrapper
+{
+    width:100%;
+     height:100%;
+}
+#admin-couponPageWrap
+{
+     margin-top:3%;
+}
+/* Start Pincode Upload */
+#Pincod-Wrapper
+{
+    
+}
+
+#Pincode-PageWrapper
+{
+    margin-top:90px; 
+    padding: 0;
+    background-color: white;
+    width:100%;
+    height:780px;
+}
+/* End Pincode Upload*/
+#SuperWrapper
+{
+    margin-top:80px;
+}
+#adcat-Wrapper
+{
+    width:100%;
+     height:100%;
+}
+#adcat-PageWrapper
+{
+    margin-top:2%; 
+    background-color: white;
+    width:100%;
+    height:500px;
+}
+#SubSubWrapper
+{
+    width:100%;
+     height:100%;
+}
+
+#SubSubPagewrap
+{
+
+    padding: 0;
+    background-color: white;
+    width:100%;
+    height:800px;
+}
+#adSub_Wrapper
+{
+   width:100%;
+     height:100%;
+}
+
+#blkwrapper
+{
+    margin-left: 84px;
+    margin-right: 84px;
+}
+
+#ad-addpro-Wrapper
+{
+    
+}
+#ad-addpro-PageWarpper
+{
+    margin-top:90px; 
+    padding: 0;
+    background-color: white;
+    width:100%;
+    height:500px;
+}
+
+.modalBackground {
+	background-color:Black;
+	filter:alpha(opacity=90);
+	opacity:0.8;
+}
+.modalPopup {
+	background-color:#FFFFFF;
+	border-width:3px;
+	border-style:solid;
+	border-color:black;
+	/*padding-top:15px;*/
+	padding-left:2%;
+	margin-top:2%;
+	width:45%;
+	height:90%;
+    font-size:12px;
+}
+
+/* Manage Product*/
+#wrapper
+{
+    width:100%;
+    height:100%;
+    margin-top:6%; 
+} 
+#Page-wrapper
+{
+    background-color: white;
+    width:100%;
+    height:500px;
+}
+/*  Create Plans.aspx */ 
+#admin-planPageWrap
+{
+    margin-top:6%;
+}
+
+/*  Create Coupon.aspx */
+#admin-couponPageWrap
+{
+   margin-top:6%; 
+}

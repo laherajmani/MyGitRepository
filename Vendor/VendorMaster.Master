@@ -1,0 +1,129 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="VendorMaster.master.cs" Inherits="GroceryStore.Vendor.VendorMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Vendor Home</title>
+   <script src="http://cdn.jsdelivr.net/webshim/1.12.4/extras/modernizr-custom.js" type="text/javascript"></script>
+<!-- polyfiller file to detect and load polyfills -->
+<script src="http://cdn.jsdelivr.net/webshim/1.12.4/polyfiller.js" type="text/javascript"></script>
+<script type="text/javascript">
+    webshims.setOptions('waitReady', false);
+    webshims.setOptions('forms-ext', { types: 'date' });
+    webshims.polyfill('forms forms-ext');
+</script>
+<link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+   <script src="../JScript/jquery-1.9.1.min.js" type="text/javascript"></script>  
+    <script src="../JScript/bootstrap.min.js" type="text/javascript"></script>
+    <link href="~/font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">      
+    <link href="VendorCss.css" rel="stylesheet" type="text/css" />
+
+    <%--<script type="text/javascript">
+        $(document).ready(function () {
+            debugger;
+            CheckingSeassion();
+        });
+        function CheckingSeassion() {
+            $.ajax({
+                type: "POST",
+                url: "../Logout.aspx/LogoutCheck",
+                data: "{}",
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (response) {
+                    if (response.d == 0) {
+                        window.location = "http://localhost:2743/Vendor/" + "VendorLogin.aspx";
+                    }
+                },
+                failure: function (msg) {
+                    alert(msg);
+                }
+            });
+        }
+  </script>--%>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+
+    <div id="Vwrapper">
+        <nav class="navbar navbar-default navbar-fixed-top" style="margin-left: 84px; margin-right: 84px; background-color:White;border:1 solid #e7e7e7">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                        aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span><span
+                            class="icon-bar"></span><span class="icon-bar"></span>
+                    </button>
+                     <a id="A1" class="navbar-brand" runat="server" href="Vendor.aspx" style="padding: 0;">
+                          <img class="img-responsive" src="../img/OrganiKong.jpg" width="120px" height="60px"
+                            alt="OrganiKong">
+                        </a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li ><a href="Vendor.aspx">Home</a></li>
+                       <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                        aria-expanded="false">Product<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="AddVendorProduct.aspx">Add Product</a></li>
+                            <li><a href="ManageVendorProduct.aspx">Manage your Product</a></li>
+                            <li><a href="VendorBulkProductUpload.aspx">Upload Bulk Product</a></li>
+                        </ul>
+                    </li>
+                       <%-- <li><a href="#contact">Orders</a></li>--%>
+                        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                            aria-expanded="false">Orders<span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="VendorOrder.aspx">Customer's Order</a></li>
+                                <%--<li><a href="VendorOrderHistory.aspx">Served Order History</a></li>--%>
+                            
+                            </ul>
+                        </li>
+                        <li><a href="CreateBasketOffer.aspx"><i ></i>Create Basket</a> </li>
+                        <%--<li><a href="#">Plans</a></li>--%>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li ><a>Welcome<span class="sr-only">(current)</span></a></li>
+                        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i>
+                            <label id="lblUserName" runat="server">
+                            </label>
+                            <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="VendorProfile.aspx"><i class="fa fa-fw fa-user"></i>Profile</a> </li>
+                                <li class="divider"></li>
+                                <li><a href="../Logout.aspx"><i class="fa fa-fw fa-power-off"></i>Log Out</a> </li>
+                            </ul>
+                        </li>
+                       <li class="active"><a><asp:Label ID="lblbalance" runat="server" ></asp:Label></a></li>
+                    </ul>           
+                </div>
+                <!--/.nav-collapse -->
+            </div>
+        </nav>
+        <div id="VpageWrapper">
+        <div id="Subscriptonalert" class="alert alert-danger alert-dismissible" role="alert" runat="server" visible="false">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+           <strong>Warning!</strong> Purchase a Plan first to Continue<a href="Plans.aspx" class="alert-link"> Choose a Plan here</a>
+        </div>
+                
+            <form id="form1" runat="server">
+            <%--<div class="alert alert-info fade in">
+                <strong>Download the Sample Excel file to upload the Product</strong>
+                <asp:Button ID="btnDownload" runat="server" Text="Download File" OnClick="btnDownload_Click" UseSubmitBehavior="false" CausesValidation="false"/>
+            </div>--%>
+            <div>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
